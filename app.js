@@ -15,6 +15,7 @@ function main(params){
     if (process.env.NODE_ENV == 'localdev') {
         console.log('Running locally');
         loadParams.NODE_EVN = process.env.NODE_ENV;
+        // console.log(process.env.USER);
         const rawdata = process.env.USER;
         loadParams.user= JSON.parse(rawdata);
         const fss = loadDev();
@@ -24,6 +25,6 @@ function main(params){
     };
     
     console.log({'user-surname': loadParams.user.surname});
-};
+}
 
-main();
+main()

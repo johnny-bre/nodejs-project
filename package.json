@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start-local-win": "setenv.bat && node app.js"
+    "start-local-win": "setenv.bat && node app.js",
+    "start-local-linux": ". ./setenv.sh && node app.js"
   },
   "author": "",
   "license": "ISC",
